@@ -1,0 +1,32 @@
+Attribute VB_Name = "ModuleDeclare"
+'variable de conexion a base de datos
+Global Base As New ADODB.Connection
+
+'variables de recorset
+Global RsUsuarios As New ADODB.Recordset
+Global RsProductos As New ADODB.Recordset 'meti aqui
+
+Global RsDespacho As New ADODB.Recordset
+Global RsDetallesDespacho As New ADODB.Recordset
+Global RsTemporalDespacho As New ADODB.Recordset
+
+
+'variables de productos
+Global vIDProductos As Integer
+Global vMostrarProducto As Integer 'añadi este el 5-oct
+
+Global vDProductos As Integer
+Global vMostrarDetallesDespacho As Integer
+
+'variables para mostrar nombre y tarea
+Global vUsername As String
+Global vTarea As String
+
+'variables para la imagen
+Global RutaOrigen As String
+Global RutaDestino As String
+Global ArchivoNombre As String
+
+'variables para los reportes
+Global CodigoReportes As String
+

@@ -1,0 +1,11 @@
+*Se necesita tener instalado Microsoft Office 2007 o posterior
+
+Copiar y registrar los DLLs que se encuentran en la carpeta "DLL" en la carpeta System32 y ejecutar lo siguiente para cada DLL copiado:
+
+Para windows de 32 bits
+regsvr32.exe C:\WINDOWS\System32\NOMBRE_ARCHIVO.OCX
+
+Para windows de 64 bits
+regsvr32.exe C:\WINDOWS\SysWOW64\NOMBRE_ARCHIVO.OCX
+OJO:  Para la version de 64bits los archivos no se copiar en System32, si no en SysWOW64
+
